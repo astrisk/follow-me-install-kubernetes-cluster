@@ -122,7 +122,8 @@ $
 
 ## 安装和配置 kubelet
 
-在master上执行
+**在master上执行**
+
 kubelet 启动时向 kube-apiserver 发送 TLS bootstrapping 请求，需要先将 bootstrap token 文件中的 kubelet-bootstrap 用户赋予 system:node-bootstrapper 角色，然后 kubelet 才有权限创建认证请求(certificatesigningrequests)：
 
 ``` bash
@@ -145,7 +146,7 @@ $
 
 ## 创建 kubelet bootstrapping kubeconfig 文件
 
-在master上执行，后把生成文件，下发到node
+**在master上执行，后把生成文件，下发到node**
 
 ``` bash
 $ # 设置集群参数
